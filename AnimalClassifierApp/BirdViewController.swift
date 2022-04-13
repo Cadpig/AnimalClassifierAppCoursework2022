@@ -13,6 +13,8 @@ class BirdViewController: UIViewController, UIImagePickerControllerDelegate & UI
     @IBOutlet weak var CameraButton: UIButton!
     @IBOutlet weak var ProceedButton: UIButton!
     
+    @IBOutlet weak var BackButton: UIButton!
+    
     @IBOutlet weak var ImageView: UIImageView!
     
     @IBOutlet weak var HeadLabel: UILabel!
@@ -27,10 +29,12 @@ class BirdViewController: UIViewController, UIImagePickerControllerDelegate & UI
     fatalError("Unexpected runtime error.")
 }
         InfoLabel.isHidden = false
-        InfoLabel.text = BirdsClassifierOutput.classLabel
+        let sortedProbas = BirdsClassifierOutput.classLabelProbs.sorted { $0.1 > $1.1 }
+        InfoLabel.text = "This bird's species is \(BirdsClassifierOutput.classLabel) with probability of \(Int(Array(sortedProbas)[0].value * 100))%"
     }
     
     @IBAction func OpenGallery(_ sender: Any) {
+        InfoLabel.isHidden = true
         if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
             let imagePickerController = UIImagePickerController()
             imagePickerController.delegate = self
@@ -40,6 +44,7 @@ class BirdViewController: UIViewController, UIImagePickerControllerDelegate & UI
     }
 
     @IBAction func OpenCamera(_ sender: Any) {
+        InfoLabel.isHidden = true
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
             let imagePickerController = UIImagePickerController()
             imagePickerController.delegate = self
@@ -51,19 +56,45 @@ class BirdViewController: UIViewController, UIImagePickerControllerDelegate & UI
     override func viewDidLoad() {
         super.viewDidLoad()
         assignbackground()
-        initLabel()
+        initLabels()
+        initButtons()
         InfoLabel.isHidden = true
         ProceedButton.isHidden = true
         // Do any additional setup after loading the view.
     }
     
-    func initLabel(){
+    func initButtons(){
+        BackButton.titleLabel?.font = UIFont(name: "Noteworthy-Bold", size: 10)
+        BackButton.setImage(UIImage(systemName: "arrow.left"), for: .normal)
+        BackButton.setTitle("Back", for: .normal)
+        BackButton.tintColor = .black
+        
+        GalleryButton.imageView?.contentMode = .scaleAspectFit
+        GalleryButton.setTitle("", for: .normal)
+        GalleryButton.setBackgroundImage(UIImage(named: "btngallerywood"), for: .normal)
+        
+        CameraButton.imageView?.contentMode = .scaleAspectFit
+        CameraButton.setTitle("", for: .normal)
+        CameraButton.setBackgroundImage(UIImage(named: "btncamerawood"), for: .normal)
+        
+        ProceedButton.imageView?.contentMode = .scaleAspectFit
+        ProceedButton.setTitle("", for: .normal)
+        ProceedButton.setBackgroundImage(UIImage(named: "btnproceedwood"), for: .normal)
+    }
+    
+    func initLabels(){
         HeadLabel.text = "Pick an image of the bird from the gallery or take a photo with the camera."
         HeadLabel.font = UIFont(name: "Noteworthy-Bold", size: 20)
         HeadLabel.textColor = .black
         HeadLabel.lineBreakMode = .byCharWrapping
         HeadLabel.textAlignment = .center
         HeadLabel.numberOfLines = 0
+        
+        InfoLabel.font = UIFont(name: "Noteworthy-Bold", size: 18)
+        InfoLabel.textColor = .black
+        InfoLabel.lineBreakMode = .byCharWrapping
+        InfoLabel.textAlignment = .center
+        InfoLabel.numberOfLines = 0
     }
 
    func assignbackground(){

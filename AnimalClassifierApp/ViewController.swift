@@ -35,13 +35,12 @@ func assignbackground(){
 
 func initButtons(){
     BeginButton.titleLabel?.font = UIFont(name: "Noteworthy-Bold", size: 20)
-    CreditsButton.titleLabel?.font = UIFont(name: "Noteworthy-Bold", size: 20)
-
     BeginButton.setTitle("Begin", for: .normal)
-    CreditsButton.setTitle("Credits", for: .normal)
-    
     BeginButton.setTitleColor(.black, for: .normal)
-    CreditsButton.setTitleColor(.black, for: .normal)
+
+    CreditsButton.imageView?.contentMode = .scaleAspectFit
+    CreditsButton.setTitle("", for: .normal)
+    CreditsButton.setBackgroundImage(UIImage(named: "btncreditswood"), for: .normal)
     
 }
 

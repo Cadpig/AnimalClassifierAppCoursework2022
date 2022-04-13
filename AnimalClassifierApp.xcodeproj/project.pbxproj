@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		966352B427FB1823007959A1 /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966352B327FB1823007959A1 /* CreditsViewController.swift */; };
 		966385C527F4B81300661243 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966385C427F4B81300661243 /* AppDelegate.swift */; };
 		966385C727F4B81300661243 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966385C627F4B81300661243 /* SceneDelegate.swift */; };
 		966385CE27F4B81500661243 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 966385CD27F4B81500661243 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		966352B327FB1823007959A1 /* CreditsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
 		966385C127F4B81300661243 /* AnimalClassifierApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimalClassifierApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		966385C427F4B81300661243 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		966385C627F4B81300661243 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				966385C627F4B81300661243 /* SceneDelegate.swift */,
 				966385E827F4BAC100661243 /* BirdViewController.swift */,
 				966385E627F4BAB100661243 /* ViewController.swift */,
+				966352B327FB1823007959A1 /* CreditsViewController.swift */,
 				966385CD27F4B81500661243 /* Assets.xcassets */,
 				966385CF27F4B81500661243 /* LaunchScreen.storyboard */,
 				966385E327F4BA9B00661243 /* Main.storyboard */,
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				966385E727F4BAB100661243 /* ViewController.swift in Sources */,
+				966352B427FB1823007959A1 /* CreditsViewController.swift in Sources */,
 				966385E927F4BAC100661243 /* BirdViewController.swift in Sources */,
 				966385C527F4B81300661243 /* AppDelegate.swift in Sources */,
 				966385E227F4B8FE00661243 /* BirdsClassifier.mlmodel in Sources */,

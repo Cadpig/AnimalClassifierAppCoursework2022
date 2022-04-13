@@ -36,14 +36,14 @@ class CreditsViewController: UIViewController {
     }
     
     func initButtons(){
-        BackButton.setImage(UIImage(systemName: "arrowshape.turn.up.backward.circle"), for: .normal)
-        BackButton.setTitle("", for: .normal)
+        BackButton.setImage(UIImage(systemName: "arrow.left"), for: .normal)
+        BackButton.setTitle("Back", for: .normal)
         BackButton.tintColor = .black
         
     }
     
     func initLabel(){
-        CreditsLabel.text = "This application was created by Vladislav Tikhonov, a student of group 351, as a coursework."
+        CreditsLabel.text = "This application was made by Vladislav Tikhonov, a student of group 351, as a coursework."
         CreditsLabel.font = UIFont(name: "Noteworthy-Bold", size: 30)
         CreditsLabel.textColor = .black
         CreditsLabel.lineBreakMode = .byCharWrapping
