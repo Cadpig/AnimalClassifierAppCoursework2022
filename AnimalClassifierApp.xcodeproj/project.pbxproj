@@ -7,18 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		965FC56F280E8BCF0059EA22 /* SpiderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965FC56E280E8BCF0059EA22 /* SpiderViewController.swift */; };
+		965FC573280E8DC70059EA22 /* BirdsClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 965FC572280E8DC70059EA22 /* BirdsClassifier.mlmodel */; };
+		965FC575280E8E140059EA22 /* SpidersClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 965FC574280E8E130059EA22 /* SpidersClassifier.mlmodel */; };
+		965FC577280EA37C0059EA22 /* ButterflyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965FC576280EA37C0059EA22 /* ButterflyViewController.swift */; };
+		965FC579280EB6A10059EA22 /* ButterfliesClassifierFirst.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 965FC578280EB6A10059EA22 /* ButterfliesClassifierFirst.mlmodel */; };
 		966352B427FB1823007959A1 /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966352B327FB1823007959A1 /* CreditsViewController.swift */; };
 		966385C527F4B81300661243 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966385C427F4B81300661243 /* AppDelegate.swift */; };
 		966385C727F4B81300661243 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966385C627F4B81300661243 /* SceneDelegate.swift */; };
 		966385CE27F4B81500661243 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 966385CD27F4B81500661243 /* Assets.xcassets */; };
 		966385D127F4B81500661243 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 966385CF27F4B81500661243 /* LaunchScreen.storyboard */; };
-		966385E227F4B8FE00661243 /* BirdsClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 966385E127F4B8FE00661243 /* BirdsClassifier.mlmodel */; };
 		966385E527F4BA9B00661243 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 966385E327F4BA9B00661243 /* Main.storyboard */; };
 		966385E727F4BAB100661243 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966385E627F4BAB100661243 /* ViewController.swift */; };
 		966385E927F4BAC100661243 /* BirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966385E827F4BAC100661243 /* BirdViewController.swift */; };
+		9665F9EF2812FA1000376536 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9665F9F12812FA1000376536 /* Localizable.strings */; };
+		9665F9F92813201A00376536 /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9665F9F82813201A00376536 /* StartScreenViewController.swift */; };
+		969DE8FD28198DC0006CF433 /* LanguageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969DE8FC28198DC0006CF433 /* LanguageHelper.swift */; };
+		969DE8FF28198E69006CF433 /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969DE8FE28198E69006CF433 /* LanguageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		965FC56E280E8BCF0059EA22 /* SpiderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiderViewController.swift; sourceTree = "<group>"; };
+		965FC572280E8DC70059EA22 /* BirdsClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = BirdsClassifier.mlmodel; sourceTree = "<group>"; };
+		965FC574280E8E130059EA22 /* SpidersClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SpidersClassifier.mlmodel; sourceTree = "<group>"; };
+		965FC576280EA37C0059EA22 /* ButterflyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterflyViewController.swift; sourceTree = "<group>"; };
+		965FC578280EB6A10059EA22 /* ButterfliesClassifierFirst.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ButterfliesClassifierFirst.mlmodel; sourceTree = "<group>"; };
 		966352B327FB1823007959A1 /* CreditsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
 		966385C127F4B81300661243 /* AnimalClassifierApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimalClassifierApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		966385C427F4B81300661243 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -26,10 +39,16 @@
 		966385CD27F4B81500661243 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		966385D027F4B81500661243 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		966385D227F4B81500661243 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		966385E127F4B8FE00661243 /* BirdsClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = BirdsClassifier.mlmodel; path = ../../BirdsClassifier.mlmodel; sourceTree = "<group>"; };
 		966385E427F4BA9B00661243 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		966385E627F4BAB100661243 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		966385E827F4BAC100661243 /* BirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BirdViewController.swift; sourceTree = "<group>"; };
+		9665F9F02812FA1000376536 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9665F9F22812FA3000376536 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		9665F9F32812FA3000376536 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9665F9F72812FED500376536 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		9665F9F82813201A00376536 /* StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenViewController.swift; sourceTree = "<group>"; };
+		969DE8FC28198DC0006CF433 /* LanguageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageHelper.swift; sourceTree = "<group>"; };
+		969DE8FE28198E69006CF433 /* LanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +65,7 @@
 		966385B827F4B81300661243 = {
 			isa = PBXGroup;
 			children = (
+				9665F9F12812FA1000376536 /* Localizable.strings */,
 				966385C327F4B81300661243 /* AnimalClassifierApp */,
 				966385C227F4B81300661243 /* Products */,
 			);
@@ -65,13 +85,20 @@
 				966385C427F4B81300661243 /* AppDelegate.swift */,
 				966385C627F4B81300661243 /* SceneDelegate.swift */,
 				966385E827F4BAC100661243 /* BirdViewController.swift */,
+				965FC56E280E8BCF0059EA22 /* SpiderViewController.swift */,
+				965FC576280EA37C0059EA22 /* ButterflyViewController.swift */,
 				966385E627F4BAB100661243 /* ViewController.swift */,
+				969DE8FE28198E69006CF433 /* LanguageViewController.swift */,
+				969DE8FC28198DC0006CF433 /* LanguageHelper.swift */,
 				966352B327FB1823007959A1 /* CreditsViewController.swift */,
+				9665F9F82813201A00376536 /* StartScreenViewController.swift */,
 				966385CD27F4B81500661243 /* Assets.xcassets */,
 				966385CF27F4B81500661243 /* LaunchScreen.storyboard */,
 				966385E327F4BA9B00661243 /* Main.storyboard */,
 				966385D227F4B81500661243 /* Info.plist */,
-				966385E127F4B8FE00661243 /* BirdsClassifier.mlmodel */,
+				965FC572280E8DC70059EA22 /* BirdsClassifier.mlmodel */,
+				965FC574280E8E130059EA22 /* SpidersClassifier.mlmodel */,
+				965FC578280EB6A10059EA22 /* ButterfliesClassifierFirst.mlmodel */,
 			);
 			path = AnimalClassifierApp;
 			sourceTree = "<group>";
@@ -118,6 +145,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 966385B827F4B81300661243;
 			productRefGroup = 966385C227F4B81300661243 /* Products */;
@@ -135,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				966385E527F4BA9B00661243 /* Main.storyboard in Resources */,
+				9665F9EF2812FA1000376536 /* Localizable.strings in Resources */,
 				966385D127F4B81500661243 /* LaunchScreen.storyboard in Resources */,
 				966385CE27F4B81500661243 /* Assets.xcassets in Resources */,
 			);
@@ -147,11 +176,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9665F9F92813201A00376536 /* StartScreenViewController.swift in Sources */,
+				965FC575280E8E140059EA22 /* SpidersClassifier.mlmodel in Sources */,
 				966385E727F4BAB100661243 /* ViewController.swift in Sources */,
+				965FC577280EA37C0059EA22 /* ButterflyViewController.swift in Sources */,
 				966352B427FB1823007959A1 /* CreditsViewController.swift in Sources */,
 				966385E927F4BAC100661243 /* BirdViewController.swift in Sources */,
 				966385C527F4B81300661243 /* AppDelegate.swift in Sources */,
-				966385E227F4B8FE00661243 /* BirdsClassifier.mlmodel in Sources */,
+				969DE8FD28198DC0006CF433 /* LanguageHelper.swift in Sources */,
+				965FC579280EB6A10059EA22 /* ButterfliesClassifierFirst.mlmodel in Sources */,
+				965FC573280E8DC70059EA22 /* BirdsClassifier.mlmodel in Sources */,
+				969DE8FF28198E69006CF433 /* LanguageViewController.swift in Sources */,
+				965FC56F280E8BCF0059EA22 /* SpiderViewController.swift in Sources */,
 				966385C727F4B81300661243 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -171,8 +207,19 @@
 			isa = PBXVariantGroup;
 			children = (
 				966385E427F4BA9B00661243 /* Base */,
+				9665F9F22812FA3000376536 /* ru */,
+				9665F9F72812FED500376536 /* en */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9665F9F12812FA1000376536 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9665F9F02812FA1000376536 /* en */,
+				9665F9F32812FA3000376536 /* ru */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -182,6 +229,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -243,6 +291,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -319,7 +368,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -348,7 +397,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

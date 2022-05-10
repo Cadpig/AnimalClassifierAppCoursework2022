@@ -37,13 +37,14 @@ class CreditsViewController: UIViewController {
     
     func initButtons(){
         BackButton.setImage(UIImage(systemName: "arrow.left"), for: .normal)
-        BackButton.setTitle("Back", for: .normal)
+        BackButton.setTitle(NSLocalizedString("back", comment: ""), for: .normal)
         BackButton.tintColor = .black
+        BackButton.titleLabel?.font = UIFont(name: "Noteworthy-Bold", size: 10)
         
     }
     
     func initLabel(){
-        CreditsLabel.text = "This application was made by Vladislav Tikhonov, a student of group 351, as a coursework."
+        CreditsLabel.text = NSLocalizedString("courseworkCredits", comment: "Credits")
         CreditsLabel.font = UIFont(name: "Noteworthy-Bold", size: 30)
         CreditsLabel.textColor = .black
         CreditsLabel.lineBreakMode = .byCharWrapping

@@ -1,0 +1,31 @@
+/* 
+  Localizable.strings
+  AnimalClassifierApp
+
+  Created by Владислав Тихонов on 22.04.2022.
+  
+*/
+
+//Strings
+"menuChooseType" = "Выберите, какой тип фото вы хотите классифицировать:"; //Choose Type
+"courseworkCredits" = "Данное приложение было разработано Владиславом Тихоновым, студентом 351 группы, в качестве курсовой работы."; //Credits
+"butterflyPick" = "Выберите изображение бабочки из галереи или сделайте фото с помощью камеры."; //PickButterfly
+"spiderPick" = "Выберите изображение паука из галереи или сделайте фото с помощью камеры."; //Pick Spider
+"birdPick" = "Выберите изображение птицы из галереи или сделайте фото с помощью камеры."; //Pick Bird
+"back" = "Назад";
+"birdPrediction %.1@ %.2@" = "Вид данной птицы -  %.1@ с уверенностью в %.2@%%";
+"spiderPrediction %.1@ %.2@" = "Вид данного паука -  %.1@ с уверенностью в %.2@%%";
+"butterflyPrediction %.1@ %.2@" = "Вид данной бабочки - %.1@ с уверенностью в %.2@%%";
+"languageChange" = "Выберите предпочтительный язык. Изменения вступят в силу после выхода в главное меню";
+
+//Assets
+"btnbirds" = "btnbirdswoodrus";
+"btnspiders" = "btnspiderswoodrus";
+"btnbutterflies" = "btnbutterflieswoodrus";
+"btndevinfo" = "btndevinfowoodrus";
+"btngallery" = "btngallerywoodrus";
+"btncamera" = "btncamerawoodrus";
+"btnproceed" = "btnproceedwoodrus";
+"banner" = "bannerrus";
+"btnbegin" = "btnbeginwoodrus";
+"btnlang" = "btnlangwoodrus";

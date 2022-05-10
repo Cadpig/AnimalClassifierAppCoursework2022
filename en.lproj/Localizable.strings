@@ -1,0 +1,31 @@
+/* 
+  Localizable.strings
+  AnimalClassifierApp
+
+  Created by Владислав Тихонов on 22.04.2022.
+  
+*/
+
+//Strings
+"menuChooseType" = "Choose which type of photo you want to classify:"; //Choose Type
+"courseworkCredits" = "This application was developed by Vladislav Tikhonov, a student of group 351, as a coursework."; //Credits
+"butterflyPick" = "Pick an image of the butterly from the gallery or take a photo with the camera."; //Pick Butterfly
+"spiderPick" = "Pick an image of the spider from the gallery or take a photo with the camera."; //Pick Spider
+"birdPick" = "Pick an image of the bird from the gallery or take a photo with the camera."; //Pick Bird
+"back" = "Back";
+"birdPrediction %.1@ %.2@" = "This bird's species is %.1@ with confidence of %.2@%%";
+"spiderPrediction %.1@ %.2@" = "This spider's species is %.1@ with confidence of %.2@%%";
+"butterflyPrediction %.1@ %.2@" = "This butterfly's species is %.1@ with confidence of %.2@%%";
+"languageChange" = "Choose your preferred language. The changes will take effect after you exit to the main menu";
+
+//Assets
+"btnbirds" = "btnbirdswood";
+"btnspiders" = "btnspiderswood";
+"btnbutterflies" = "btnbutterflieswood";
+"btndevinfo" = "btndevinfowood";
+"btngallery" = "btngallerywood";
+"btncamera" = "btncamerawood";
+"btnproceed" = "btnproceedwood";
+"banner" = "banner";
+"btnbegin" = "btnbeginwood";
+"btnlang" = "btnlangwood";

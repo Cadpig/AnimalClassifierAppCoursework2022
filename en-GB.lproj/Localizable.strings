@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  AnimalClassifierApp
+
+  Created by Владислав Тихонов on 22.04.2022.
+  
+*/
+
+"menuChooseType" = "Choose which type of photo you want to classify:";

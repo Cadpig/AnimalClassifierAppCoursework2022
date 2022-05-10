@@ -22,7 +22,7 @@ class BirdViewController: UIViewController, UIImagePickerControllerDelegate & UI
     
     let model = BirdsClassifier()
     
-    @IBAction func PredictBird(_ sender: Any) {
+    @IBAction func PredictBird(_ sender: Any) {//предсказывает вид птицы по фотографии, и вероятность того, что это именно этот вид, и выводит на экран
         ProceedButton.isHidden = true
         guard let pixelBuffer = buffer(from: ImageView.image!) else { return }
         guard let BirdsClassifierOutput = try? model.prediction(image: pixelBuffer) else {
@@ -30,10 +30,10 @@ class BirdViewController: UIViewController, UIImagePickerControllerDelegate & UI
 }
         InfoLabel.isHidden = false
         let sortedProbas = BirdsClassifierOutput.classLabelProbs.sorted { $0.1 > $1.1 }
-        InfoLabel.text = "This bird's species is \(BirdsClassifierOutput.classLabel) with probability of \(Int(Array(sortedProbas)[0].value * 100))%"
+        InfoLabel.text = String(format: NSLocalizedString("birdPrediction %.1@ %.2@", comment: ""), BirdsClassifierOutput.classLabel, String(Int(Array(sortedProbas)[0].value * 100)))
     }
     
-    @IBAction func OpenGallery(_ sender: Any) {
+    @IBAction func OpenGallery(_ sender: Any) {//функция, открывающая галерею и позволяющая выбрать фото из галереи
         InfoLabel.isHidden = true
         if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
             let imagePickerController = UIImagePickerController()
@@ -43,7 +43,7 @@ class BirdViewController: UIViewController, UIImagePickerControllerDelegate & UI
         }
     }
 
-    @IBAction func OpenCamera(_ sender: Any) {
+    @IBAction func OpenCamera(_ sender: Any) {//функция, открывающая камеру и позволяющая выбрать сделанное фото
         InfoLabel.isHidden = true
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
             let imagePickerController = UIImagePickerController()
@@ -63,27 +63,27 @@ class BirdViewController: UIViewController, UIImagePickerControllerDelegate & UI
         // Do any additional setup after loading the view.
     }
     
-    func initButtons(){
+    func initButtons(){//функция, инициализирующая кнопки
         BackButton.titleLabel?.font = UIFont(name: "Noteworthy-Bold", size: 10)
         BackButton.setImage(UIImage(systemName: "arrow.left"), for: .normal)
-        BackButton.setTitle("Back", for: .normal)
+        BackButton.setTitle(NSLocalizedString("back", comment: ""), for: .normal)
         BackButton.tintColor = .black
         
         GalleryButton.imageView?.contentMode = .scaleAspectFit
         GalleryButton.setTitle("", for: .normal)
-        GalleryButton.setBackgroundImage(UIImage(named: "btngallerywood"), for: .normal)
+        GalleryButton.setBackgroundImage(UIImage(named: NSLocalizedString("btngallery", comment: "")), for: .normal)
         
         CameraButton.imageView?.contentMode = .scaleAspectFit
         CameraButton.setTitle("", for: .normal)
-        CameraButton.setBackgroundImage(UIImage(named: "btncamerawood"), for: .normal)
+        CameraButton.setBackgroundImage(UIImage(named: NSLocalizedString("btncamera", comment: "")), for: .normal)
         
         ProceedButton.imageView?.contentMode = .scaleAspectFit
         ProceedButton.setTitle("", for: .normal)
-        ProceedButton.setBackgroundImage(UIImage(named: "btnproceedwood"), for: .normal)
+        ProceedButton.setBackgroundImage(UIImage(named: NSLocalizedString("btnproceed", comment: "")), for: .normal)
     }
     
-    func initLabels(){
-        HeadLabel.text = "Pick an image of the bird from the gallery or take a photo with the camera."
+    func initLabels(){//функция, инициализирующая лейблы
+        HeadLabel.text = NSLocalizedString("birdPick", comment: "PickBird")
         HeadLabel.font = UIFont(name: "Noteworthy-Bold", size: 20)
         HeadLabel.textColor = .black
         HeadLabel.lineBreakMode = .byCharWrapping
@@ -97,7 +97,7 @@ class BirdViewController: UIViewController, UIImagePickerControllerDelegate & UI
         InfoLabel.numberOfLines = 0
     }
 
-   func assignbackground(){
+   func assignbackground(){//функция, инициализирующая фон
         let background = UIImage(named: "MenuBackground")
 
         var imageView : UIImageView!
@@ -110,11 +110,11 @@ class BirdViewController: UIViewController, UIImagePickerControllerDelegate & UI
         self.view.sendSubviewToBack(imageView)
     }
     
-func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {//вспомогательная функция для imagepickercontroller
         self.dismiss(animated: true, completion: nil)
     }
 
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {//контроллер для выбора изображений
         let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
         ImageView.image = image
         self.dismiss(animated: true, completion: nil)
